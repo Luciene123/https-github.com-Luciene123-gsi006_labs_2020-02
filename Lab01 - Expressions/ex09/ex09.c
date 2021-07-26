@@ -3,6 +3,19 @@
 
 int main() {
     printf("<< Distancia >>\n");
+    float Xa,Xb, Ya, Yb, distancia;     
+    printf("Digite Xa:\n");
+    scanf("%f", &Xa);
+    printf("Digite Xb: \n");    
+    scanf("%f", &Xb);
+    printf("Digite Ya:\n"); 
+    scanf("%f", &Ya);
+    printf("Digite Yb:\n");      
+    scanf("%f", &Yb);
+    distancia = sqrt( pow(Xb-Xa, 2) + pow(Yb-Ya, 2) ); 
+    printf("O valor de %f ao quadrado é %f",distancia);
+    system("pause");
+    return 0;
 }
 
 /*

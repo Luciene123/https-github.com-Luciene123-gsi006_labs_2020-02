@@ -2,6 +2,18 @@
 
 int main() {
     printf("<< Calculo da Media >>\n");
+     float a1,a2,media;
+    char c; 
+    printf("Digite a letra inicial do nome do aluno nota:");    
+    scanf("%c", &c);   
+    printf("Digite a 1a nota:");    
+    scanf("%f", &a1);
+    printf("Digite a 2a nota:");    
+    scanf("%f", &a2);   
+    media=(a1+a2)/2;   
+    printf("Nota media do aluno %c:%f\n",c,media);
+    system("pause");
+    return 0 ;
 }
 
 /*

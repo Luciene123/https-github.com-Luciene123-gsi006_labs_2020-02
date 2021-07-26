@@ -2,6 +2,13 @@
 
 int main() {
     printf("<< Aumento Salarial >>\n");
+    float n,atual;    
+    printf(" Digite o valor do salário R$:\n");
+    scanf("%f",&n);
+    atual= n + ((n*25)/100);
+    printf("O valor do salario de: %f depois de corrigido em 25%% fica em: %f",n,atual);
+    system("pause");
+    return 0;
 }
 
 /*

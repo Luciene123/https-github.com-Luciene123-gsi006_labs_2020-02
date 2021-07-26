@@ -2,6 +2,16 @@
 
 int main() {
     printf("<< Loteria >>\n");
+    printf("<<Loteria >>\n");
+    int g1,g2,g3;     
+    g1=(780000*46)/100;
+    g2=(780000*32)/100;
+    g3=(780000*22)/100;
+    printf(" Primeiro vencedor R$:%d\n", g1);  
+    printf(" Segundo vencedor R$:%d\n", g2);
+    printf(" Terceiro vencedor R$:%d\n", g3); 
+    system("pause");   
+    return 0;
 }
 
 /*
