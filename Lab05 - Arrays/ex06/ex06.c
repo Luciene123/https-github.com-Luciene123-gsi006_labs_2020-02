@@ -2,6 +2,31 @@
 
 int main(){
     printf("<< Five Values with index >>\n");
+    int Vet[5];
+	int i;
+	int maior=0, menor=0,soma=0, posmaior, posmenor;
+	float media=0;
+   	for(i=0;i<5;i++)
+    {   
+		printf("Entre com o numero %d:\n",i++);
+        scanf("%d",&Vet[i]);
+        if(Vet[i]<= menor)
+            menor=Vet[i];
+            posmenor=i;
+        if(Vet[i]>= maior)
+            maior=Vet[i];
+            posmaior=i;
+        	soma+=Vet[i];
+      	}
+    media=soma/5;
+    for(i=0;i<6;i++)
+    {
+        printf("Os valor %d digitados são:%d\n",i,Vet[i]);         	
+ 	}
+    printf("O maior valor é:%d, localizado na posicão %d do vetor\n",maior,posmaior);
+    printf("O menor valor é:%d localizado na posição %d do vetor\n",menor,posmenor);
+    printf("A média é:%f\n",media);
+	system("pause");
 
     return 0;
 }

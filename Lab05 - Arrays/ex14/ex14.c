@@ -1,7 +1,36 @@
 #include <stdio.h>
-
+#define MAX 1000
+struct Matricula{
+    int matr;
+    char classeSocial;
+    float CRA;};
 int main(){
     printf("<< Universidade X >>\n");
+    struct Matricula *a;
+    int i,n;      
+    printf("Digite a quantidade decadastro:\n ");
+    scanf( "%d", &n);
+    if(n <= MAX)
+        exit(1);
+        else
+        for(i=0;i<n;i++)
+        {
+            printf("Digite a matricula:\n ");
+            scanf( "%d", &a[i].matr);
+            printf("Digite a classe social:\n ");        
+            scanf( "%c", &a[i].classeSocial);
+            printf("Digite o CRA:\n ");        
+            scanf( "%f", &a[i].CRA); 
+        }
+        //Mostra cadastros aluno
+         printf("----------Alunos cadastrados.----------\n ");
+        for(i=0;i<n;i++)
+        { 
+            printf("Matricula:%d\n",a[i].matr);            
+            printf("Digite a classe social:\n",a[i].classeSocial);           
+            printf("CRA:\n",a[i].CRA);        
+        }           
+           
 
     return 0;
 }

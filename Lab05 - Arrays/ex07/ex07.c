@@ -1,7 +1,23 @@
 #include <stdio.h>
 
 int main(){
-    printf("<< Normalizando as notas >>\n");
+    printf("<< Normalizando 5 notas >>\n");
+    float nota[5],maior=0;
+	int i;	 
+    for(i=0;i < 5;i++)
+    {   	
+		printf("Entre com a nota do aluno %d:\n",i++ );
+        scanf("%d",&nota[i]);
+        nota[i]=nota[i]*2;
+        if(nota[i]>= maior)
+            maior=nota[i];
+    }
+    
+    for(i=0;i < 5;i++)
+    {   
+		printf("A nota  normalizada do aluno %d é:%d, maior nota:%d\n",i++,nota[i], maior);
+    }
+	system("pause");
 
     return 0;
 }

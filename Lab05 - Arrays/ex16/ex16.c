@@ -2,6 +2,34 @@
 
 int main(){
     printf("<< Valores iguais >>\n");
+    int Vet[8];
+    int v[4];
+	int i,j,k,cont;
+	
+    for(i=0;i<8;i++)
+    {   
+		printf("Entre com um numero inteiro %d:\n",i++);
+        scanf("%d",&Vet[i]);
+    }
+    for(i=0;i<8;i++)
+    {
+        if(Vet[i]==Vet[i+1])
+            v[j]=Vet[i]; 
+    }
+    for(j=0;j<4;j++)
+    {
+        for(k=0;k<4;k++)
+        {   
+            if(v[k]==v[k+1])
+            {
+                cont++; 
+            }
+        }
+        if(v[j]!=v[j+1])
+		        printf("%d repetiu %d vezes\n",Vet[j],cont);
+        cont=0;
+    }
+	system("pause");
 
     return 0;
 }

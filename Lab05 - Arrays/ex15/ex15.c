@@ -2,7 +2,27 @@
 
 int main(){
     printf("<< Valores iguais >>\n");
-
+    int Vet[8];
+    int v[4];
+	int i,j;
+	
+    for(i=0;i<8;i++)
+    {   
+		printf("Entre com um numero inteiro %d:\n",i++);
+        scanf("%d",&Vet[i]);
+    }
+    for(i=0;i<8;i++)
+    {
+        if(Vet[i]==Vet[i+1])
+            v[j]=Vet[i];
+		
+    }
+    for(j=0;j<4;j++)
+    {
+        if(v[j]!=v[j+1])            
+		printf("Os numeros repetidos são %d:\n",Vet[i]);
+    }
+	system("pause");
     return 0;
 }
 

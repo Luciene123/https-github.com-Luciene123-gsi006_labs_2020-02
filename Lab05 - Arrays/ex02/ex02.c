@@ -2,7 +2,18 @@
 
 int main(){
     printf("<< Listando um vetor - com loops >>\n");
-
+    int Vet[6];
+	int i;	
+    for(i=0;i<6;i++)
+    {   
+		printf("Entre com o numero inteiro %d:\n",i++);
+        	scanf("%d",&Vet[i]);
+    }
+    for(i=0;i<6;i++)
+    {   
+		printf("Os numeros lidos são %d:\n",Vet[i]);
+    }
+	system("pause");
     return 0;
 }
 
