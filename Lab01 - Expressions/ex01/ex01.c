@@ -6,6 +6,7 @@ int main(){
     printf("Digite um numero real");
     scanf("%f", &n);
     quadrado=n*n;
+    printf("O valor de %f ao quadrado eh %f",n, quadrado);
     return 0;
 }
 
